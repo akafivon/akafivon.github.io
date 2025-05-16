@@ -6,9 +6,9 @@
   <title>zkVM 课程页面</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-black text-white">
+<body class="bg-black text-neutral-200">
   <header class="bg-zinc-900 px-6 py-4 flex justify-between items-center border-b border-zinc-800">
-    <h1 class="text-2xl font-bold">zkVM Academy</h1>
+    <h1 class="text-2xl font-bold text-white">zkVM Academy</h1>
     <nav class="space-x-4 text-sm">
       <a href="#" class="hover:underline">Home</a>
       <a href="https://twitter.com/coset_io" target="_blank" class="hover:underline">Twitter</a>
@@ -18,92 +18,91 @@
     </nav>
   </header>
 
-  <div class="flex max-w-screen-xl mx-auto py-10 px-4 gap-8">
-    <aside class="w-60 shrink-0 border-r border-zinc-800 pr-6 text-sm text-zinc-400">
-      <h2 class="text-base font-semibold text-white mb-4">课程导航</h2>
-      <ul class="space-y-2 mb-6">
-<li><a href="#episode-1" class="hover:underline text-white">Episode 1: zkVM 的历史和现状</a></li>
-<li><a href="#episode-2" class="hover:underline text-white">Episode 2: 深入解析 Jolt</a></li>
-<li><a href="#episode-3" class="hover:underline text-white">Episode 3: zkwasm 介绍</a></li>
-<li><a href="#episode-4" class="hover:underline text-white">Episode 4: zkVM 的虚拟机简析</a></li>
-<li><a href="#episode-5" class="hover:underline text-white">Episode 5: zkVM 电路设计与 prover 证明</a></li>
-<li><a href="#episode-6" class="hover:underline text-white">Episode 6: zkVM 电路设计与 prover 证明（二）</a></li>
-<li><a href="#episode-7" class="hover:underline text-white">Episode 7: ZKM 的 prover 证明详解</a></li>
-<li><a href="#episode-8" class="hover:underline text-white">Episode 8: zkVM 实操讲解</a></li>
-      </ul>
-      <div class="mt-10">
-        <h3 class="text-white text-sm font-semibold mb-2">感谢我们的赞助商</h3>
-        <img src="assets/sponsor1.png" alt="Sponsor" class="h-10">
-      </div>
-    </aside>
+  <div class="flex justify-center bg-black px-6">
+    <div class="flex max-w-6xl w-full py-10 gap-8">
+      <!-- Sidebar -->
+      <aside class="w-64 shrink-0 pr-6 text-sm text-zinc-400 border-r border-zinc-800 bg-zinc-950 rounded-lg p-4">
+        <h2 class="text-base font-semibold text-white mb-4">课程导航</h2>
+        <ul class="space-y-2 mb-6">
+<li><a href="#episode-1" class="hover:text-white hover:underline">1. zkVM 的历史和现状</a></li>
+<li><a href="#episode-2" class="hover:text-white hover:underline">2. 深入解析 Jolt</a></li>
+<li><a href="#episode-3" class="hover:text-white hover:underline">3. zkwasm 介绍</a></li>
+<li><a href="#episode-4" class="hover:text-white hover:underline">4. zkVM 的虚拟机简析</a></li>
+<li><a href="#episode-5" class="hover:text-white hover:underline">5. zkVM 电路设计与 prover 证明</a></li>
+<li><a href="#episode-6" class="hover:text-white hover:underline">6. zkVM 电路设计与 prover 证明（二）</a></li>
+<li><a href="#episode-7" class="hover:text-white hover:underline">7. ZKM 的 prover 证明详解</a></li>
+<li><a href="#episode-8" class="hover:text-white hover:underline">8. zkVM 实操讲解</a></li>
+        </ul>
+        <div class="mt-10 text-center">
+          <h3 class="text-white text-sm font-semibold mb-2">感谢我们的赞助商</h3>
+          <img src="assets/sponsor1.png" alt="Sponsor" class="h-10 mx-auto rounded-md shadow" />
+        </div>
+      </aside>
 
-    <main class="flex-1 space-y-20">
+      <!-- Main content -->
+      <main class="flex-1 space-y-16">
 
-    <section id="episode-1">
-      <h2 class="text-2xl font-semibold mb-2">Episode 1: zkVM 的历史和现状</h2>
-      <p class="text-sm text-zinc-400 mb-4">主讲人：wangyao</p>
-      <div class="aspect-video mb-4">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/xoGte-TzHHk" frameborder="0" allowfullscreen></iframe>
-      </div><p class="mb-2 text-blue-400 underline">
-        <a href="https://github.com/Antalpha-Labs/zkp-academy/blob/main/ZKVM/lesson%201/zkvm-wangyao.pdf" target="_blank">查看课件</a></p><ul class='list-disc list-inside text-sm space-y-1'><li><a class='text-blue-400 underline' href='https://medium.com/@Luca_Franceschini/a-guide-to-zero-knowledge-proofs-f2ff9e5959a8' target='_blank'>A guide to Zero Knowledge Proofs</a></li><li><a class='text-blue-400 underline' href='https://vitalik.eth.limo/general/2022/08/04/zkevm.html' target='_blank'>The different types of ZK-EVMs</a></li><li><a class='text-blue-400 underline' href='https://eprint.iacr.org/2023/1217' target='_blank'>Jolt</a></li></ul></section>
+        <section id="episode-1" class="pb-6 border-b border-zinc-800">
+          <h2 class="text-3xl font-bold mb-2 text-white">Episode 1: zkVM 的历史和现状</h2>
+          <p class="text-sm text-zinc-400 mb-4">主讲人：wangyao</p>
+          <div class="aspect-video mb-4">
+            <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/xoGte-TzHHk" frameborder="0" allowfullscreen></iframe>
+          </div><p class="mb-2 text-indigo-400 underline"><a href="https://github.com/Antalpha-Labs/zkp-academy/blob/main/ZKVM/lesson%201/zkvm-wangyao.pdf" target="_blank">查看课件</a></p><ul class='list-disc list-inside text-sm space-y-1'><li><a class='text-indigo-400 hover:text-indigo-300 underline' href='https://medium.com/@Luca_Franceschini/a-guide-to-zero-knowledge-proofs-f2ff9e5959a8' target='_blank'>A guide to Zero Knowledge Proofs</a></li><li><a class='text-indigo-400 hover:text-indigo-300 underline' href='https://vitalik.eth.limo/general/2022/08/04/zkevm.html' target='_blank'>The different types of ZK-EVMs</a></li><li><a class='text-indigo-400 hover:text-indigo-300 underline' href='https://eprint.iacr.org/2023/1217' target='_blank'>Jolt</a></li></ul></section>
 
-    <section id="episode-2">
-      <h2 class="text-2xl font-semibold mb-2">Episode 2: 深入解析 Jolt</h2>
-      <p class="text-sm text-zinc-400 mb-4">主讲人：Backdoor</p>
-      <div class="aspect-video mb-4">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/lFUYsULyUNY" frameborder="0" allowfullscreen></iframe>
-      </div><p class="mb-2 text-blue-400 underline">
-        <a href="https://doutv.notion.site/Jolt-Lasso-for-Newbies-1591aee049b480b7a44ad7d00e3e9265?pvs=4" target="_blank">查看课件</a></p><ul class='list-disc list-inside text-sm space-y-1'><li><a class='text-blue-400 underline' href='https://www.youtube.com/playlist?list=PLjQ9HCQMu_8xjOEM_vh5p26ODtr-mmGxO' target='_blank'>Lasso + Jolt</a></li><li><a class='text-blue-400 underline' href='https://vitalik.eth.limo/general/2024/04/29/binius.html' target='_blank'>Binius</a></li><li><a class='text-blue-400 underline' href='https://jolt.a16zcrypto.com/how/jolt.html' target='_blank'>JoltBook</a></li><li><a class='text-blue-400 underline' href='https://x.com/samrags_/status/1820429579787423759?s=46' target='_blank'>Jolt R1CS</a></li><li><a class='text-blue-400 underline' href='https://www.zksecurity.xyz/blog/posts/how-jolt-works/' target='_blank'>Jolt 技术解析</a></li></ul></section>
+        <section id="episode-2" class="pb-6 border-b border-zinc-800">
+          <h2 class="text-3xl font-bold mb-2 text-white">Episode 2: 深入解析 Jolt</h2>
+          <p class="text-sm text-zinc-400 mb-4">主讲人：Backdoor</p>
+          <div class="aspect-video mb-4">
+            <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/lFUYsULyUNY" frameborder="0" allowfullscreen></iframe>
+          </div><p class="mb-2 text-indigo-400 underline"><a href="https://doutv.notion.site/Jolt-Lasso-for-Newbies-1591aee049b480b7a44ad7d00e3e9265?pvs=4" target="_blank">查看课件</a></p><ul class='list-disc list-inside text-sm space-y-1'><li><a class='text-indigo-400 hover:text-indigo-300 underline' href='https://www.youtube.com/playlist?list=PLjQ9HCQMu_8xjOEM_vh5p26ODtr-mmGxO' target='_blank'>Lasso + Jolt</a></li><li><a class='text-indigo-400 hover:text-indigo-300 underline' href='https://vitalik.eth.limo/general/2024/04/29/binius.html' target='_blank'>Binius</a></li><li><a class='text-indigo-400 hover:text-indigo-300 underline' href='https://jolt.a16zcrypto.com/how/jolt.html' target='_blank'>JoltBook</a></li><li><a class='text-indigo-400 hover:text-indigo-300 underline' href='https://x.com/samrags_/status/1820429579787423759?s=46' target='_blank'>Jolt R1CS</a></li><li><a class='text-indigo-400 hover:text-indigo-300 underline' href='https://www.zksecurity.xyz/blog/posts/how-jolt-works/' target='_blank'>Jolt 技术解析</a></li></ul></section>
 
-    <section id="episode-3">
-      <h2 class="text-2xl font-semibold mb-2">Episode 3: zkwasm 介绍</h2>
-      <p class="text-sm text-zinc-400 mb-4">主讲人：Sinka</p>
-      <div class="aspect-video mb-4">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/ZwibS4uGEj4" frameborder="0" allowfullscreen></iframe>
-      </div></section>
+        <section id="episode-3" class="pb-6 border-b border-zinc-800">
+          <h2 class="text-3xl font-bold mb-2 text-white">Episode 3: zkwasm 介绍</h2>
+          <p class="text-sm text-zinc-400 mb-4">主讲人：Sinka</p>
+          <div class="aspect-video mb-4">
+            <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/ZwibS4uGEj4" frameborder="0" allowfullscreen></iframe>
+          </div></section>
 
-    <section id="episode-4">
-      <h2 class="text-2xl font-semibold mb-2">Episode 4: zkVM 的虚拟机简析</h2>
-      <p class="text-sm text-zinc-400 mb-4">主讲人：Johnxu</p>
-      <div class="aspect-video mb-4">
-        <iframe class="w-full h-full" src="https://www.youtube.com/watch?v=KxxeyKTksxs" frameborder="0" allowfullscreen></iframe>
-      </div><p class="mb-2 text-blue-400 underline">
-        <a href="https://github.com/coset-io/zkp-academy/blob/main/ZKVM/lesson%204/Introduce%20the%20zkVM.pdf" target="_blank">查看课件</a></p><ul class='list-disc list-inside text-sm space-y-1'><li><a class='text-blue-400 underline' href='https://gregchadwick.co.uk/blog/building-rrs-pt1/' target='_blank'>Building a RISC-V simulator in Rust</a></li><li><a class='text-blue-400 underline' href='https://trapdoortech.medium.com/zero-knowledge-proof-introduction-to-sp1-zkvm-source-code-d26f88f90ce4' target='_blank'>SP1 zkVM 源码解析</a></li><li><a class='text-blue-400 underline' href='https://blog.tigris.fr/2019/07/28/writing-an-emulator-memory-management/' target='_blank'>Memory management in VM</a></li><li><a class='text-blue-400 underline' href='https://fmash16.github.io/content/posts/riscv-emulator-in-c.html' target='_blank'>RISC-V emulator in C</a></li></ul></section>
+        <section id="episode-4" class="pb-6 border-b border-zinc-800">
+          <h2 class="text-3xl font-bold mb-2 text-white">Episode 4: zkVM 的虚拟机简析</h2>
+          <p class="text-sm text-zinc-400 mb-4">主讲人：Johnxu</p>
+          <div class="aspect-video mb-4">
+            <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/watch?v=KxxeyKTksxs" frameborder="0" allowfullscreen></iframe>
+          </div><p class="mb-2 text-indigo-400 underline"><a href="https://github.com/coset-io/zkp-academy/blob/main/ZKVM/lesson%204/Introduce%20the%20zkVM.pdf" target="_blank">查看课件</a></p><ul class='list-disc list-inside text-sm space-y-1'><li><a class='text-indigo-400 hover:text-indigo-300 underline' href='https://gregchadwick.co.uk/blog/building-rrs-pt1/' target='_blank'>Building a RISC-V simulator in Rust</a></li><li><a class='text-indigo-400 hover:text-indigo-300 underline' href='https://trapdoortech.medium.com/zero-knowledge-proof-introduction-to-sp1-zkvm-source-code-d26f88f90ce4' target='_blank'>SP1 zkVM 源码解析</a></li><li><a class='text-indigo-400 hover:text-indigo-300 underline' href='https://blog.tigris.fr/2019/07/28/writing-an-emulator-memory-management/' target='_blank'>Memory management in VM</a></li><li><a class='text-indigo-400 hover:text-indigo-300 underline' href='https://fmash16.github.io/content/posts/riscv-emulator-in-c.html' target='_blank'>RISC-V emulator in C</a></li></ul></section>
 
-    <section id="episode-5">
-      <h2 class="text-2xl font-semibold mb-2">Episode 5: zkVM 电路设计与 prover 证明</h2>
-      <p class="text-sm text-zinc-400 mb-4">主讲人：Dream</p>
-      <div class="aspect-video mb-4">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/avAIjRvgwqc" frameborder="0" allowfullscreen></iframe>
-      </div></section>
+        <section id="episode-5" class="pb-6 border-b border-zinc-800">
+          <h2 class="text-3xl font-bold mb-2 text-white">Episode 5: zkVM 电路设计与 prover 证明</h2>
+          <p class="text-sm text-zinc-400 mb-4">主讲人：Dream</p>
+          <div class="aspect-video mb-4">
+            <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/avAIjRvgwqc" frameborder="0" allowfullscreen></iframe>
+          </div></section>
 
-    <section id="episode-6">
-      <h2 class="text-2xl font-semibold mb-2">Episode 6: zkVM 电路设计与 prover 证明（二）</h2>
-      <p class="text-sm text-zinc-400 mb-4">主讲人：Dream</p>
-      <div class="aspect-video mb-4">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/sALgu6tHEhs" frameborder="0" allowfullscreen></iframe>
-      </div></section>
+        <section id="episode-6" class="pb-6 border-b border-zinc-800">
+          <h2 class="text-3xl font-bold mb-2 text-white">Episode 6: zkVM 电路设计与 prover 证明（二）</h2>
+          <p class="text-sm text-zinc-400 mb-4">主讲人：Dream</p>
+          <div class="aspect-video mb-4">
+            <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/sALgu6tHEhs" frameborder="0" allowfullscreen></iframe>
+          </div></section>
 
-    <section id="episode-7">
-      <h2 class="text-2xl font-semibold mb-2">Episode 7: ZKM 的 prover 证明详解</h2>
-      <p class="text-sm text-zinc-400 mb-4">主讲人：Daniel</p>
-      <div class="aspect-video mb-4">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/KlhQns_8QII" frameborder="0" allowfullscreen></iframe>
-      </div><p class="mb-2 text-blue-400 underline">
-        <a href="https://github.com/coset-io/zkp-academy/blob/main/ZKVM/lesson%207/ZKM%20Prover%E5%9F%BA%E6%9C%AC%E6%9E%84%E9%80%A0%E8%AF%BE%E7%A8%8B.pptx" target="_blank">查看课件</a></p></section>
+        <section id="episode-7" class="pb-6 border-b border-zinc-800">
+          <h2 class="text-3xl font-bold mb-2 text-white">Episode 7: ZKM 的 prover 证明详解</h2>
+          <p class="text-sm text-zinc-400 mb-4">主讲人：Daniel</p>
+          <div class="aspect-video mb-4">
+            <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/KlhQns_8QII" frameborder="0" allowfullscreen></iframe>
+          </div><p class="mb-2 text-indigo-400 underline"><a href="https://github.com/coset-io/zkp-academy/blob/main/ZKVM/lesson%207/ZKM%20Prover%E5%9F%BA%E6%9C%AC%E6%9E%84%E9%80%A0%E8%AF%BE%E7%A8%8B.pptx" target="_blank">查看课件</a></p></section>
 
-    <section id="episode-8">
-      <h2 class="text-2xl font-semibold mb-2">Episode 8: zkVM 实操讲解</h2>
-      <p class="text-sm text-zinc-400 mb-4">主讲人：Johnxu</p>
-      <div class="aspect-video mb-4">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/rSNyOY1U7x0" frameborder="0" allowfullscreen></iframe>
-      </div></section>
-
-      <div class="mt-20 pt-10 border-t border-zinc-800">
-        <h3 class="text-xl font-semibold mb-4">感谢本期课程赞助方</h3>
-        <img src="assets/sponsor1.png" alt="Sponsor Logo" class="h-12">
-      </div>
-    </main>
+        <section id="episode-8" class="pb-6 border-b border-zinc-800">
+          <h2 class="text-3xl font-bold mb-2 text-white">Episode 8: zkVM 实操讲解</h2>
+          <p class="text-sm text-zinc-400 mb-4">主讲人：Johnxu</p>
+          <div class="aspect-video mb-4">
+            <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/rSNyOY1U7x0" frameborder="0" allowfullscreen></iframe>
+          </div></section>
+        <div class="pt-10 text-center border-t border-zinc-800">
+          <h3 class="text-xl font-semibold mb-4 text-white">感谢本期课程赞助方</h3>
+          <img src="assets/sponsor1.png" alt="Sponsor Logo" class="h-12 mx-auto rounded-md shadow" />
+        </div>
+      </main>
+    </div>
   </div>
 
   <script>
