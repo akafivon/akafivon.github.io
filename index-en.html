@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>zkVM Course Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white">
+  <header class="bg-zinc-900 px-6 py-4 flex justify-between items-center border-b border-zinc-800">
+    <h1 class="text-2xl font-bold">zkVM Academy</h1>
+    <nav class="space-x-4 text-sm">
+      <a href="#" class="hover:underline">Home</a>
+      <a href="https://twitter.com/coset_io" target="_blank" class="hover:underline">Twitter</a>
+      <a href="https://github.com/coset-io" target="_blank" class="hover:underline">GitHub</a>
+      <a href="https://t.me/coset_io" target="_blank" class="hover:underline">Telegram</a>
+      <button onclick="toggleLanguage()" class="ml-4 bg-zinc-800 px-2 py-1 rounded text-xs">中文 / EN</button>
+    </nav>
+  </header>
+
+  <div class="flex max-w-screen-xl mx-auto py-10 px-4 gap-8">
+    <aside class="w-60 shrink-0 border-r border-zinc-800 pr-6 text-sm text-zinc-400">
+      <h2 class="text-base font-semibold text-white mb-4">Course Navigation</h2>
+      <ul class="space-y-2 mb-6">
+        <li><a href="#episode-1" class="hover:underline text-white">Episode 1: History & Evolution of zkVM</a></li>
+        <li><a href="#episode-2" class="hover:underline">Episode 2: Deep Dive into Jolt</a></li>
+        <li><a href="#episode-3" class="hover:underline">Episode 3: Intro to zkwasm</a></li>
+        <li><a href="#episode-4" class="hover:underline">Episode 4: VM Overview</a></li>
+        <li><a href="#episode-5" class="hover:underline">Episode 5: Circuit & Prover Design</a></li>
+        <li><a href="#episode-6" class="hover:underline">Episode 6: Circuit & Prover (Part 2)</a></li>
+        <li><a href="#episode-7" class="hover:underline">Episode 7: ZKM Prover Details</a></li>
+        <li><a href="#episode-8" class="hover:underline">Episode 8: Practical Session</a></li>
+      </ul>
+      <div class="mt-10">
+        <h3 class="text-white text-sm font-semibold mb-2">Our Sponsor</h3>
+        <img src="assets/sponsor1.png" alt="Sponsor" class="h-10">
+      </div>
+    </aside>
+
+    <main class="flex-1 space-y-20">
+      <div class="mb-6">
+        <p class="text-base text-white">Thanks to our sponsor for supporting this course:</p>
+        <img src="assets/sponsor1.png" alt="Sponsor" class="h-12 mt-2">
+      </div>
+
+      <p class="text-zinc-400">This is the English version of the zkVM Course. Each episode’s content can be translated similarly to the Chinese version. Let me know if you'd like a full translation.</p>
+    </main>
+  </div>
+
+  <script>
+    function toggleLanguage() {
+      const currentLang = document.documentElement.lang;
+      if (currentLang === 'en') {
+        window.location.href = 'index.html';
+      } else {
+        window.location.href = 'index-en.html';
+      }
+    }
+  </script>
+</body>
+</html>
